@@ -1,6 +1,6 @@
 {% set name = "bowtie" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "667bb36b804611f80974f9e4ff3ff3ecf6a5dd5e45a277b1507317a29524dad7" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "fe71781e735c65683eef8d12bf3f25d786d19d3eaa0a25299b93ada876aae077" %}
 
 package:
   name: {{ name|lower }}-py
@@ -14,6 +14,7 @@ source:
 build:
   noarch: python
   number: 0
+  skip: True  # [py<35]
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -26,7 +27,6 @@ requirements:
     - eventlet
     - flask
     - flask-socketio
-    - future
     - jinja2
     - markdown
     - msgpack-python
