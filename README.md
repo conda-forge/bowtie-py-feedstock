@@ -1,7 +1,7 @@
 About bowtie-py
 ===============
 
-Home: http://github.com/jwkvam/bowtie
+Home: https://github.com/jwkvam/bowtie
 
 Package license: MIT
 
@@ -17,7 +17,9 @@ Interactively explore your data in new ways! Deploy and share with others!
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/bowtie-py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/bowtie-py-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/bowtie-py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/bowtie-py-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/bowtie-py-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/bowtie-py-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/bowtie-py-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/bowtie-py-feedstock/branch/master)
 
 Current release info
 ====================
