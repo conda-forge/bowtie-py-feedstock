@@ -14,7 +14,7 @@ source:
 
 build:
   number: {{ build }}
-  skip: True  # [py<35]
+  skip: True  # [py<36]
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
