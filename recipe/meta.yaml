@@ -1,6 +1,6 @@
 {% set name = "bowtie" %}
-{% set version = "0.9.1" %}
-{% set sha256 = "c3635ae7ec88870754049b8ec4ea403810d69692352df731185a18ef7314b75e" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "ad93b4686675794ecbdc90530cf5db5e914a681d5936b63313989f6d19a13841" %}
 {% set build = 0 %}
 
 package:
