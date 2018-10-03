@@ -30,6 +30,7 @@ requirements:
     - jinja2
     - markdown
     - msgpack-python
+    - nodejs
     - yarn
 
 test:
