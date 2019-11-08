@@ -1,26 +1,23 @@
-{% set name = "bowtie" %}
 {% set version = "0.11.0" %}
-{% set sha256 = "947baaf3ff5ee31f5e850b18b72a185ba40870cf12f0d97929528c09f580edb0" %}
-{% set build = 0 %}
 
 package:
-  name: {{ name|lower }}-py
+  name: bowtie-py
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/b/bowtie/bowtie-{{ version }}.tar.gz
+  sha256: 947baaf3ff5ee31f5e850b18b72a185ba40870cf12f0d97929528c09f580edb0
 
 build:
-  number: {{ build }}
+  number: 0
   skip: True  # [py<36]
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - python
     - pip
+    - flit
   run:
     - python
     - click
