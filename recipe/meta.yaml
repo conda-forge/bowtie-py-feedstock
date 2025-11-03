@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/b/bowtie/bowtie-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/b/bowtie/bowtie-{{ version }}.tar.gz
   sha256: 947baaf3ff5ee31f5e850b18b72a185ba40870cf12f0d97929528c09f580edb0
 
 build:
-  number: 3
+  number: 4
   skip: True  # [py<36]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
